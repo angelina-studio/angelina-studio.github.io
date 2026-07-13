@@ -559,14 +559,14 @@
 
             <div class="flex flex-wrap gap-4 md:gap-8 mb-16 border-b border-gray-100 pb-6 reveal reveal-delay-1">
                 <button onclick="filterCases('all')" class="filter-btn active text-sm tracking-widest uppercase font-semibold text-gray-900" id="btn-all" data-i18n="filterAll">Все работы</button>
-                <button onclick="filterCases('fashion')" class="filter-btn text-sm tracking-widest uppercase font-medium text-gray-500 hover:text-black" id="btn-fashion" data-i18n="filterFashion">Фэшн & Одежда</button>
-                <button onclick="filterCases('beauty')" class="filter-btn text-sm tracking-widest uppercase font-medium text-gray-500 hover:text-black" id="btn-beauty" data-i18n="filterBeauty">Косметика & Бьюти</button>
-                <button onclick="filterCases('neurophoto')" class="filter-btn text-sm tracking-widest uppercase font-medium text-gray-500 hover:text-black" id="btn-neurophoto" data-i18n="filterNeuro">Нейрофотосессии</button>
-                <button onclick="filterCases('fantasy')" class="filter-btn text-sm tracking-widest uppercase font-medium text-gray-500 hover:text-black" id="btn-fantasy" data-i18n="filterFantasy">Фэнтези & Игры</button>
-                <button onclick="filterCases('branding')" class="filter-btn text-sm tracking-widest uppercase font-medium text-gray-500 hover:text-black" id="btn-branding" data-i18n="filterBranding">Логотипы & Стиль</button>
-                <button onclick="filterCases('cards')" class="filter-btn text-sm tracking-widest uppercase font-medium text-gray-500 hover:text-black" id="btn-cards" data-i18n="filterCards">Визитки</button>
-                <button onclick="filterCases('infographics')" class="filter-btn text-sm tracking-widest uppercase font-medium text-gray-500 hover:text-black" id="btn-infographics" data-i18n="filterInfographics">Инфографика</button>
-                <button onclick="filterCases('trademark')" class="filter-btn text-sm tracking-widest uppercase font-medium text-gray-500 hover:text-black" id="btn-trademark" data-i18n="filterTrademark">Товарные знаки</button>
+                <button onclick="filterCases('fashion')" class="filter-btn text-sm tracking-widest uppercase font-semibold text-gray-500 hover:text-black" id="btn-fashion" data-i18n="filterFashion">Фэшн & Одежда</button>
+                <button onclick="filterCases('beauty')" class="filter-btn text-sm tracking-widest uppercase font-semibold text-gray-500 hover:text-black" id="btn-beauty" data-i18n="filterBeauty">Косметика & Бьюти</button>
+                <button onclick="filterCases('neurophoto')" class="filter-btn text-sm tracking-widest uppercase font-semibold text-gray-500 hover:text-black" id="btn-neurophoto" data-i18n="filterNeuro">Нейрофотосессии</button>
+                <button onclick="filterCases('fantasy')" class="filter-btn text-sm tracking-widest uppercase font-semibold text-gray-500 hover:text-black" id="btn-fantasy" data-i18n="filterFantasy">Фэнтези & Игры</button>
+                <button onclick="filterCases('branding')" class="filter-btn text-sm tracking-widest uppercase font-semibold text-gray-500 hover:text-black" id="btn-branding" data-i18n="filterBranding">Логотипы & Стиль</button>
+                <button onclick="filterCases('cards')" class="filter-btn text-sm tracking-widest uppercase font-semibold text-gray-500 hover:text-black" id="btn-cards" data-i18n="filterCards">Визитки</button>
+                <button onclick="filterCases('infographics')" class="filter-btn text-sm tracking-widest uppercase font-semibold text-gray-500 hover:text-black" id="btn-infographics" data-i18n="filterInfographics">Инфографика</button>
+                <button onclick="filterCases('trademark')" class="filter-btn text-sm tracking-widest uppercase font-semibold text-gray-500 hover:text-black" id="btn-trademark" data-i18n="filterTrademark">Товарные знаки</button>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10" id="cases-grid">
@@ -1232,10 +1232,10 @@
             const allBtns = document.querySelectorAll('.filter-btn');
             allBtns.forEach(btn => {
                 if(btn.id === `btn-${category}`) {
-                    btn.classList.add('active', 'text-gray-900', 'font-semibold');
+                    btn.classList.add('active', 'text-gray-900');
                     btn.classList.remove('text-gray-500');
                 } else {
-                    btn.classList.remove('active', 'text-gray-900', 'font-semibold');
+                    btn.classList.remove('active', 'text-gray-900');
                     btn.classList.add('text-gray-500');
                 }
             });
