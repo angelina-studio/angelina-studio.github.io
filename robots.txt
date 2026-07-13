@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /yandex_dad8177104d892fc.html
+
+Sitemap: https://angelina-studio.github.io/sitemap.xml
